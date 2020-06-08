@@ -4,7 +4,7 @@ import {
   DarkTheme,
   DefaultTheme,
 } from '@react-navigation/native';
-import { useColorScheme } from 'react-native';
+import { AppearanceProvider, useColorScheme } from '../components/appearance';
 
 import BottomTabs from './BottomTabs';
 
@@ -12,8 +12,10 @@ export default function NavigationRoot() {
   const scheme = useColorScheme();
 
   return (
-    <NavigationContainer theme={scheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <BottomTabs />
-    </NavigationContainer>
+    <AppearanceProvider>
+      <NavigationContainer theme={scheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <BottomTabs />
+      </NavigationContainer>
+    </AppearanceProvider>
   );
 }

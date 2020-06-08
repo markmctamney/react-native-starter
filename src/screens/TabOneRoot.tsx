@@ -1,11 +1,16 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Button } from 'react-native';
 
+import { Text } from '../components/common';
 import ScreenContainer from '../components/ScreenContainer';
 
-const TabOneRoot = () => (
+const TabOneRoot = ({ navigation }) => (
   <ScreenContainer>
     <Text>Tab One</Text>
+    <Button
+      title="Details"
+      onPress={() => navigation.navigate('Details', { name: 'One Details' })}
+    />
   </ScreenContainer>
 );
 

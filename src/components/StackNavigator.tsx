@@ -1,7 +1,9 @@
 import React from 'react';
-import createNativeStackNavigator from './common/createNativeStackNavigator';
 
-const SCREENS = [];
+import createNativeStackNavigator from './common/createNativeStackNavigator';
+import Details from '../screens/Details';
+
+const SCREENS = [{ title: 'Details', component: Details }];
 
 const StackNavigator = (initialScreen) => {
   const Stack = createNativeStackNavigator();
@@ -17,7 +19,12 @@ const StackNavigator = (initialScreen) => {
         {initialScreen.component}
       </Stack.Screen>
       {SCREENS.map((screen) => (
-        <Stack.Screen name={screen.title} component={screen.component} />
+        <Stack.Screen
+          name={screen.title}
+          key={screen.title}
+          component={screen.component}
+          options={({ route }) => ({ title: route.params.name })}
+        />
       ))}
     </Stack.Navigator>
   );

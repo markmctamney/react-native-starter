@@ -15,7 +15,7 @@ const BottomTabNavigator = ({ tabs }) => (
       console.log('tab', tab);
 
       return {
-        tabBarIcon: ({ focused, color, size }) => (
+        tabBarIcon: ({ color, size }) => (
           <Icon
             type={tab.icon?.type}
             name={tab.icon?.name}

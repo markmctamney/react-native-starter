@@ -61,3 +61,45 @@ buck-out/
 # Expo
 .expo/*
 web-build/
+
+# @generated: @expo/next-adapter@2.1.20
+/.expo/*
+# Expo Web
+/web-build/*
+# Expo Native
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+# Next.js
+/.next/*
+/out/
+# Next.js production
+/build/
+# Next.js dependencies
+/.pnp
+.pnp.js
+# @end @expo/next-adapter
+
+# @generated: @expo/next-adapter@2.1.17
+/.expo/*
+# Expo Web
+/web-build/*
+# Expo Native
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+# Next.js
+/.next/*
+/out/
+# Next.js production
+/build/
+# Next.js dependencies
+/.pnp
+.pnp.js
+# @end @expo/next-adapter

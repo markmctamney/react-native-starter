@@ -1,9 +1,12 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { PropsWithChildren } from 'react';
+import { View, StyleSheet, ViewProps } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
-const ScreenContainer = (props) => (
-  <View style={[styles.container, { ...props?.style }]} {...props}>
+const ScreenContainer = ({
+  style: viewStyle,
+  ...props
+}: PropsWithChildren<ViewProps>) => (
+  <View style={[styles.container, viewStyle]} {...props}>
     <ScrollView contentContainerStyle={styles.contentContainer}>
       {props?.children}
     </ScrollView>

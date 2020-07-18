@@ -1,4 +1,6 @@
-import { TabOneRoot, TabTwoRoot, TabThreeRoot } from '../../screens';
+import React from 'react';
+import { TabOneRoot, TabTwoRoot, TabThreeRoot } from '../screens';
+import NestedStackTabNavigator from '../components/NestedStackTabNavigator';
 
 const TABS = [
   {
@@ -27,4 +29,6 @@ const TABS = [
   },
 ];
 
-export default TABS;
+const HomeTabNavigator = () => <NestedStackTabNavigator tabs={TABS} />;
+
+export default HomeTabNavigator;

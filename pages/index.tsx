@@ -4,19 +4,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import Head from 'next/head';
 import { Link } from 'expo-next-react-navigation';
 
+import ScreenContainer from '../src/components/ScreenContainer';
+
 export default function App() {
   return (
-    <>
-      <Head>
-        <title>Home</title>
-      </Head>
-      <View style={styles.container}>
-        <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
-        <Link routeName="page-one">Go to page one</Link>
-        <Link routeName="page-one">Go to page two</Link>
-        <Link routeName="page-one">Go to page three</Link>
-      </View>
-    </>
+    <ScreenContainer>
+      <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
+      <Link routeName="page-one">Go to page one</Link>
+      <Link routeName="page-one">Go to page two</Link>
+      <Link routeName="page-one">Go to page three</Link>
+    </ScreenContainer>
   );
 }
 

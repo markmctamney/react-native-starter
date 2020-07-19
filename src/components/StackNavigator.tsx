@@ -23,7 +23,7 @@ const StackNavigator = (initialScreen) => {
           name={screen.title}
           key={screen.title}
           component={screen.component}
-          options={({ route }) => ({ title: route.params.name })}
+          options={({ route }) => ({ title: route.params?.name })}
         />
       ))}
     </Stack.Navigator>

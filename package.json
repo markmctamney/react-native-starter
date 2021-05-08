@@ -27,7 +27,7 @@
     "expo-updates": "^0.2.10",
     "lodash": "^4.17.15",
     "react": "16.11.0",
-    "react-dom": "16.11.0",
+    "react-dom": "16.13.0",
     "react-native": "0.62.2",
     "react-native-appearance": "^0.3.4",
     "react-native-easy-icon": "^1.0.2",

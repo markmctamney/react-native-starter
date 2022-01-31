@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { View, StyleSheet, ScrollView } from 'react-native';
 
 const ScreenContainer = (props) => (
   <View style={[styles.container, { ...props?.style }]} {...props}>

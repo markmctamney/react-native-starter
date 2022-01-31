@@ -3,6 +3,7 @@
   "description": "This bare project template includes TypeScript",
   "version": "37.0.6",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "android": "react-native run-android",
     "android:expo": "expo start --android",

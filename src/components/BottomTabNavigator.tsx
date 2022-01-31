@@ -1,14 +1,16 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-easy-icon';
+// import Icon from 'react-native-easy-icon';
+import { Feather as Icon } from '@expo/vector-icons';
 import { find } from 'lodash';
+import type { Tab } from '../navigation/BottomTabs/tabs';
 
 import StackNavigator from './StackNavigator';
 
 const BottomTabs = createBottomTabNavigator();
 const { Navigator, Screen } = BottomTabs;
 
-const BottomTabNavigator = ({ tabs }) => (
+const BottomTabNavigator = ({ tabs }: { tabs: Tab[] }) => (
   <Navigator
     screenOptions={({ route }) => {
       const tab = find(tabs, { title: route.name });
@@ -16,12 +18,7 @@ const BottomTabNavigator = ({ tabs }) => (
 
       return {
         tabBarIcon: ({ color, size }) => (
-          <Icon
-            type={tab.icon?.type}
-            name={tab.icon?.name}
-            color={color}
-            size={size}
-          />
+          <Icon name={tab?.icon?.name} color={color} size={size} />
         ),
       };
     }}>

@@ -1,11 +1,22 @@
 import { TabOneRoot, TabTwoRoot, TabThreeRoot } from '../../screens';
+import type { Feather } from '@expo/vector-icons';
+import type { ComponentProps } from 'react';
 
-const TABS = [
+type FeatherIconName = ComponentProps<typeof Feather>['name'];
+
+export interface Tab {
+  title: string;
+  icon: {
+    name: FeatherIconName;
+  };
+  component: React.ComponentType<any>;
+}
+
+const TABS: Tab[] = [
   {
     title: 'Tab1',
     icon: {
       name: 'home',
-      type: 'feather',
     },
     component: TabOneRoot,
   },
@@ -13,7 +24,6 @@ const TABS = [
     title: 'Tab2',
     icon: {
       name: 'activity',
-      type: 'feather',
     },
     component: TabTwoRoot,
   },
@@ -21,7 +31,6 @@ const TABS = [
     title: 'Tab3',
     icon: {
       name: 'settings',
-      type: 'feather',
     },
     component: TabThreeRoot,
   },

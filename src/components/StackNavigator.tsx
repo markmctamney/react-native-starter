@@ -15,7 +15,7 @@ const StackNavigator = (initialScreen) => {
         headerLargeTitleHideShadow: true,
         headerHideShadow: true,
       }}>
-      <Stack.Screen name={initialScreen.title} title={initialScreen.title}>
+      <Stack.Screen name={initialScreen.title}>
         {initialScreen.component}
       </Stack.Screen>
       {SCREENS.map((screen) => (
@@ -23,7 +23,7 @@ const StackNavigator = (initialScreen) => {
           name={screen.title}
           key={screen.title}
           component={screen.component}
-          options={({ route }) => ({ title: route.params.name })}
+          options={({ route }) => ({ title: route?.params?.name })}
         />
       ))}
     </Stack.Navigator>

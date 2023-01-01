@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <RNSScreenContainer
+    style={
+      Object {
+        "flex": 1,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <RNSScreen
+      activityState={2}
+      collapsable={false}
+      forwardedRef={[Function]}
+      gestureResponseDistance={
+        Object {
+          "bottom": -1,
+          "end": -1,
+          "start": -1,
+          "top": -1,
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    >
+      <View
+        accessibilityElementsHidden={false}
+        importantForAccessibility="auto"
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+            Object {
+              "backgroundColor": "rgb(242, 242, 242)",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              undefined,
+            ]
+          }
+        >
+          <RNSScreenStack
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <RNSScreen
+              collapsable={false}
+              forwardedRef={[Function]}
+              gestureResponseDistance={
+                Object {
+                  "bottom": -1,
+                  "end": -1,
+                  "start": -1,
+                  "top": -1,
+                }
+              }
+              nativeBackButtonDismissalEnabled={false}
+              onAppear={[Function]}
+              onDisappear={[Function]}
+              onDismissed={[Function]}
+              onHeaderBackButtonClicked={[Function]}
+              onTransitionProgress={[Function]}
+              onWillAppear={[Function]}
+              onWillDisappear={[Function]}
+              replaceAnimation="pop"
+              stackPresentation="push"
+              style={
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+              swipeDirection="horizontal"
+            >
+              <RNSScreenStackHeaderConfig
+                backgroundColor="rgb(255, 255, 255)"
+                color="rgb(0, 122, 255)"
+                hidden={false}
+                hideShadow={true}
+                largeTitle={true}
+                largeTitleHideShadow={true}
+                onAttached={[Function]}
+                onDetached={[Function]}
+                title="Tab1"
+                titleColor="rgb(28, 28, 30)"
+                topInsetEnabled={true}
+                translucent={false}
+              />
+              <View
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    Object {
+                      "backgroundColor": "rgb(242, 242, 242)",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  <RCTScrollView
+                    contentContainerStyle={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "justifyContent": "center",
+                      }
+                    }
+                  >
+                    <View>
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "rgb(28, 28, 30)",
+                            },
+                            Object {},
+                          ]
+                        }
+                      >
+                        Tab One
+                      </Text>
+                      <View
+                        accessibilityRole="button"
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Array [
+                              Object {},
+                            ]
+                          }
+                        >
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#007AFF",
+                                  "fontSize": 18,
+                                  "margin": 8,
+                                  "textAlign": "center",
+                                },
+                              ]
+                            }
+                          >
+                            Details
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </RCTScrollView>
+                </View>
+              </View>
+            </RNSScreen>
+          </RNSScreenStack>
+        </View>
+      </View>
+    </RNSScreen>
+  </RNSScreenContainer>
+  <View
+    collapsable={false}
+    onLayout={[Function]}
+    pointerEvents="auto"
+    style={
+      Object {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderTopColor": "rgb(216, 216, 216)",
+        "borderTopWidth": 0.5,
+        "bottom": 0,
+        "elevation": 8,
+        "height": 49,
+        "left": 0,
+        "paddingBottom": 0,
+        "paddingHorizontal": 0,
+        "position": null,
+        "right": 0,
+        "transform": Array [
+          Object {
+            "translateY": 0,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Tab1, tab, 1 of 3"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "selected": true,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "flexDirection": "column",
+              "justifyContent": "flex-end",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "minWidth": 25,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <Text />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "minWidth": 25,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 0,
+                },
+              ]
+            }
+          >
+            <Text />
+          </View>
+        </View>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "textAlign": "center",
+              },
+              Object {
+                "color": "rgb(0, 122, 255)",
+              },
+              Object {
+                "fontSize": 10,
+              },
+              undefined,
+            ]
+          }
+        >
+          Tab1
+        </Text>
+      </View>
+      <View
+        accessibilityLabel="Tab2, tab, 2 of 3"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "selected": false,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "flexDirection": "column",
+              "justifyContent": "flex-end",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "minWidth": 25,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 0,
+                },
+              ]
+            }
+          >
+            <Text />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "minWidth": 25,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <Text />
+          </View>
+        </View>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "textAlign": "center",
+              },
+              Object {
+                "color": "#8E8E8F",
+              },
+              Object {
+                "fontSize": 10,
+              },
+              undefined,
+            ]
+          }
+        >
+          Tab2
+        </Text>
+      </View>
+      <View
+        accessibilityLabel="Tab3, tab, 3 of 3"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "selected": false,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "flexDirection": "column",
+              "justifyContent": "flex-end",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "minWidth": 25,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 0,
+                },
+              ]
+            }
+          >
+            <Text />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "minWidth": 25,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <Text />
+          </View>
+        </View>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "textAlign": "center",
+              },
+              Object {
+                "color": "#8E8E8F",
+              },
+              Object {
+                "fontSize": 10,
+              },
+              undefined,
+            ]
+          }
+        >
+          Tab3
+        </Text>
+      </View>
+    </View>
+  </View>
+</RNCSafeAreaProvider>
+`;
